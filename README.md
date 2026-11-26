@@ -1,6 +1,14 @@
 # Computer Vision
 
-The image labs begin with boundaries and gradient descriptors, then use a convolutional network for classification and a U-Net for binary segmentation. The video labs follow motion from frame to frame and then classify short clips.
+Eight labs explore how image and video algorithms behave when a reference answer is available. The image track measures boundaries, digit classes and segmentation masks. The video track measures point displacement, foreground masks and motion classes.
+
+## Try a short example
+
+The [short examples](examples/README.md) cover Otsu thresholding and four-neighbour connected components. The two scripts use NumPy. From the repository root, run
+
+```sh
+python examples/otsu_threshold.py
+```
 
 | Track | Examples | What the output measures |
 | --- | --- | --- |
@@ -15,11 +23,11 @@ A noisy shape has a known outline, so its detected edges can be scored against a
 
 ## Run a lab
 
-Use Python 3.12. Install the dependencies from this folder, then run a script or open the corresponding notebook. Keep the `gallery` folder with the course when downloading it.
+Use Python 3.12. Install the dependencies from the repository root, then run a script or open the corresponding notebook. Keep the `gallery` folder with the course when downloading it.
 
 ```sh
 python -m pip install -r requirements.txt
 python "Videos/01 Lucas-Kanade Tracking/lucas_kanade_tracking.py"
 ```
 
-Optical digit recognition uses the 8 × 8 UCI images supplied with scikit-learn and an image-level split. The other scenes and video clips are generated locally. Each example cites the method and describes its evaluation. [UCI optical digits](https://doi.org/10.24432/C50P49) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [MIT code licence](../LICENSE)
+Optical digit recognition uses the 8 × 8 UCI images supplied with scikit-learn and an image-level split. The other scenes and video clips are generated locally. Each example cites the method and describes its evaluation. [UCI optical digits](https://doi.org/10.24432/C50P49) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [MIT code licence](LICENSE)
