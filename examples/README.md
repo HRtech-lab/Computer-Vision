@@ -4,7 +4,7 @@ Run these commands from the repository root. The examples use NumPy.
 
 ## Connected components
 
-Count foreground regions using horizontal and vertical pixel neighbours.
+Foreground pixels belong to the same region when a path connects them along shared edges (four-neighbour connectivity). In the example mask, the lone foreground pixel in the bottom row touches the three-pixel region only at a corner, so it forms its own region. The script reports the areas in scan order: `[3, 2, 1]` pixels.
 
 ```sh
 python examples/connected_components.py
